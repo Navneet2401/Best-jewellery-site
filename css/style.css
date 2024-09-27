@@ -3,7 +3,7 @@
 }
 
 body {
-	background: #4B3C35;
+	background: #b8ad46ab;
 	font-family: Arial, Helvetica, sans-serif;
 	margin: 0;
 }
@@ -12,7 +12,7 @@ body {
 
 /* Style the header which contains the navigation links */
 header {
-    background-color: #2aa3d3;
+    background-color: #e9e515e5;
     overflow: hidden;
   }
   
@@ -23,7 +23,7 @@ header {
   
   /* Style the image we use as a label for the hamburger menu checkbox */
   #hamburger_image {
-    background-color: rgba(221, 176, 176, 0.897);
+    background-color: rgba(3, 0, 0, 0.897);
     display: block;
     margin-bottom: 20px;
     margin-left: auto;
@@ -61,8 +61,8 @@ header {
   
   /* Change the color of links on hover using mouse */
   nav a:hover {
-    background-color: #d8bfbfe5;
-    color: #4b3c35;
+    background-color: #f0da14fb;
+    color: #0e0d0d;
   }
   
   /* Change the color of links on focus using tab key */
@@ -74,14 +74,14 @@ header {
   
   /* Change the color of the active/current link */
   .active_nav {
-    background-color: #d8bfbfe5;
+    background-color: #e9e515e5;
     color: rgba(15, 14, 14, 0.699);
   }
 
   
 footer {
-	background: #dbd6d4;
-  color: #E3DFDE;
+	background: #e6cf08;
+  color: #0a0a0a;
 	padding: 32px;
 	text-align: center;
 	width: 100%;

@@ -1,43 +1,133 @@
-/* Mobile First View */
-/* Photo Grid */
+ 
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #00263B; /
+    color: #FFD700; 
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    font-family: 'Georgia', serif;
+    color: #FFD700; 
+}
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a.active_nav {
+    border-bottom: 2px solid #FFD700;
+}
+
+nav a:hover {
+    color: #FFD700;
+}
+
+/* Hamburger Menu */
+#hamburger_image {
+    width: 25px;
+    cursor: pointer;
+}
+
+#hamburger_checkbox {
+    display: none;
+}
+
+#hamburger_checkbox:checked + nav {
+    display: block;
+}
+
+nav {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    nav {
+        display: block;
+    }
+} 
 #row {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 0 12px;
-	vertical-align: middle;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 12px;
+    margin-top: 20px;
 }
 
 .column {
-	margin-top: 0;
-	max-width: 100%;
-	vertical-align: middle;
+    margin-top: 20px;
+    max-width: 100%;
+    padding: 0 6px;
 }
 
 .column img {
-	padding-bottom: 10px;
-	width: 100%;
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Hover effect on images (only for non-touch devices) */
+@media (hover: hover) and (pointer: fine) {
+    .column img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+    }
+}
 
-/* For desktops */
+/* For tablets and larger devices */
 @media only screen and (min-width: 768px) {
-	.column {
-		max-width: 50%;
-		padding: 0 6px;
-	}
+    .column {
+        max-width: 50%;
+        padding: 0 10px;
+    }
 
-	#row {
-	padding: 0 6px;
-	}
-}
-
-
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+    #row {
+        padding: 0 16px;
+    }
+} 
 @media only screen and (min-width: 1200px) {
-	.column {
-		max-width: 25%;
-	}
+    .column {
+        max-width: 25%;
+    }
+
+    #row {
+        padding: 0 24px;
+    }
+ 
+    .column img:hover {
+        transform: scale(1.08);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    }
 }
 
+ 
+ 
+footer {
+    background-color: #00263B; /
+    color: #FFD700; 
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+}
 

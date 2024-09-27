@@ -1,66 +1,143 @@
-form {
-  border-radius: 5px;
-  background-color: #E3DFDE;
-  margin: 20px auto; 
-  padding: 35px;
-  width: 90%;
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
 }
 
-form textarea {
-  width: 100%;
-  height: 150px;
+header {
+  background-color: #00263B; 
+  color: #FFD700; 
+  text-align: center;
 }
 
-input {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #E3DFDE;
-  border-radius: 4px;
-  box-sizing: border-box;
+header h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  font-family: 'Georgia', serif;
+  color: #FFD700; 
 }
 
-button {
-  width: 100%;
-  background-color: #87604E;
-  color: #E3DFDE;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a.active_nav {
+  border-bottom: 2px solid #FFD700;
+}
+
+nav a:hover {
+  color: #FFD700;
+}
+
+#hamburger_image {
+  width: 25px;
   cursor: pointer;
 }
 
-button:hover, button:focus {
-  filter: brightness(125%);
+#hamburger_checkbox {
+  display: none;
 }
 
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    form {
-    width: 70%;
-  }
+#hamburger_checkbox:checked + nav {
+  display: block;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+nav {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
-  form {
-    width: 50%;
+  nav {
+      display: block;
   }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  form {
-    width: 40%;
-  }
+/* Form Styles */
+#contact_form {
+  background-color: #fff;
+  border-radius: 10px;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    form {
-    width: 30%;
+#contact_form label {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: inline-block;
+  color: #00263B; ;
+}
+
+#contact_form input[type="text"],
+#contact_form input[type="email"],
+#contact_form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+}
+
+#contact_form textarea {
+  resize: none;
+  height: 150px;
+}
+
+#contact_form button {
+  background-color: #00263B; ;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 10px;
+}
+
+#contact_form button:hover {
+  background-color: #FFD700;
+  color: #4a4a4a;
+}
+
+/* Footer */
+footer {
+  background-color: #4a4a4a;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 20px;
+}
+
+/* Footer styling */
+footer {
+  background-color: #00263B; 
+  color: #FFD700; 
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+
+@media only screen and (min-width: 768px) {
+  #contact_form {
+      margin: 50px auto;
   }
 }
